@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://thumbs.dreamstime.com/b/panorama-starry-night-sky-milky-way-galaxy-stars-sp-panorama-starry-night-sky-milky-way-galaxy-stars-115128221.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      
+      .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+      
+      .hero-text button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 10px 25px;
+        color: black;
+        background-color: #ddd;
+        text-align: center;
+        cursor: pointer;
+      }
+      
+      .hero-text button:hover {
+        background-color: #555;
+        color: white;
+      }
+      </style>
+
+</head>
+<body>
+
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size:50px"> GIVE TWO VALUES AS AN INPUT:</h1>
+       
+     
+
+ <!--javascript code-->
+
+    <input id="text1" type="text" placeholder="ENTER INPUT">
+    <br><br><button onClick=myFunction()>CHECK OUTPUT</button> <script>
+     function myFunction() { 
+        var str = document.getElementById("text1").value;
+        const myarr=str.split(",")
+        const alphalist=[]
+         if ((myarr[0]=="a" && myarr[1]=="b") || (myarr[0]=="b" && myarr[1]=="c")|| (myarr[0]=="a" && myarr[1]=="c")){ for(let i=0;
+         i<myarr.length;i++) { for(let j=0;j<myarr.length;j++) { alphalist.push("("+myarr[i]+","+myarr[j]+")"); }
+          } 
+          alert(alphalist);} 
+          }
+           </script>
+
+</div>
+</div>
+    </body>
+</html><!DOCTYPE html>
